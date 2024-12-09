@@ -188,3 +188,48 @@ header {
     }
 
 }
+
+.about-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 50px;
+}
+
+/*
+How does this work?
+
+1) makes the gradient colros
+2) makes the gradients larger than the elements themselve 
+3) makes the text color transparent so that can see the gradient which is in the background
+4) clips the gradient to the text, means the gradient is only visible in the text boundary
+5) at the start of the animation, at start, gradient position = 0% horizontally, 50% vertically, means on the left side center
+6) at 50%, the gradient is on the right, 100% horizontally and stil on the center
+
+.gradient-text {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(45deg, red, yellow, green, blue, purple);
+    background-size: 400% 400%; 
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    animation: gradientAnimation 5s ease infinite; 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+*/
+
