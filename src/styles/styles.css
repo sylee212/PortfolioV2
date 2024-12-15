@@ -10,7 +10,23 @@
     --blue-background-300: #101935;
 }
 
+p {
+    font-size: 15px;
+    color: var(--white-text);
+}
+
 h1 {
+    font-size: 50px;
+    color: var(--white-text);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--white-text);
+}
+
+h3 {
+    font-size: 20px;
     color: var(--white-text);
 }
 
@@ -41,10 +57,15 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
 
             li {
                 font-size: 10px;
+
+                &:hover {
+                    background-color: var(--orange-text);
+                    border-radius: 10%;
+                }
             }
         }
     }
@@ -77,8 +98,10 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../assets/img/night sky.jpg");
+    background-image: url("../assets/img/background2.png");
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .page span {
@@ -105,9 +128,14 @@ header {
     height: 10px;
     background: white;
     border-radius: 50%; /* Make the star circular */
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Add a glow effect */
+    box-shadow:     0 0 20px rgba(255, 255, 255, 0.9),  /* Bright white core */
+    0 0 40px rgba(255, 255, 0, 0.7),   /* Yellow glow */
+    0 0 80px rgba(255, 215, 0, 0.6);   /* Extended soft glow */
     animation: shootingStar 5s linear infinite;
     opacity: 0;
+
+    /* Blurry effect */
+    filter: blur(1px);
 }
 
 /* Create the trail */
@@ -134,7 +162,7 @@ header {
     
     width: 200px; /* Length of the trail */
     height: 2px; /* Thickness of the trail */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1), transparent);
+    background: linear-gradient(90deg, rgba(0 , 255, 255, 0.9), transparent);
 }
 
 /* this creates the animation */
@@ -177,13 +205,11 @@ header {
 
     h1 {
         padding-right: 100px; 
-        font-size: 50px;
         text-align: left;
     }
 
     h2 {
         padding-left: 100px;
-        font-size: 30px;
         text-align: left;
     }
 
@@ -194,10 +220,87 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 20%;
 
-    padding-top: 50px;
+    margin-top: 10px;
 }
+
+.card {
+    display: flex;
+    background-color: var(--blue-background-300);
+    z-index: 2;
+
+
+}
+
+.about-me {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    position: absolute;
+
+    .about-me-text {
+        flex:1;
+        margin-left: 20px;
+
+        .about-me-text-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-me-text-text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-me-image {
+        flex:1;
+
+        overflow: hidden; /* Clipping content outside */
+
+
+        img {
+            height: 80vh;
+            object-fit: cover; /* Ensure image scales properly */
+        }
+    }
+}
+
+
+
+.projects-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+
+    margin-top: 10px;
+}
+
+
+
+.projects-collection {
+    display: flex;  
+    position: relative;
+    flex: wrap;
+    width: 100%;
+    height: 80%;
+    margin: 10%;
+
+
+    .project-card {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+
+
 
 /*
 How does this work?
