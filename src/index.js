@@ -54,3 +54,16 @@ import self_picture from "./assets/img/me-background-free.png";
 
 const self_img = document.getElementById("self-image");
 self_img.src = self_picture;
+
+
+import project1 from "./assets/img/project1.jpg";
+import project2 from "./assets/img/project2.jpg";
+import project3 from "./assets/img/project3.jpg";
+
+const project1_img = document.getElementById("project-image1");
+const project2_img = document.getElementById("project-image2");
+const project3_img = document.getElementById("project-image3");
+
+project1_img.src = project1;
+project2_img.src = project2;    
+project3_img.src = project3;
