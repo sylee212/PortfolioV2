@@ -52,10 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 import self_picture from "./assets/img/me-background-free.png";
 
+// about me page //
 const self_img = document.getElementById("self-image");
 self_img.src = self_picture;
 
-
+// projects page //
 import project1 from "./assets/img/project1.jpg";
 import project2 from "./assets/img/project2.jpg";
 import project3 from "./assets/img/project3.jpg";
@@ -68,5 +69,22 @@ project1_img.src = project1;
 project2_img.src = project2;    
 project3_img.src = project3;
 
+
+// experience page //
 const experience1_img = document.getElementById("experience-image1");
 experience1_img.src = project1;
+
+
+// contact me page //
+import github_icon from "./assets/img/github-icon.png";
+import linkedin_icon from "./assets/img/linkedin-icon.png";
+import gmail_icon from "./assets/img/gmail-icon.png";
+
+const github_img = document.getElementById("github-icon");
+github_img.src = github_icon;
+
+const linkedin_img = document.getElementById("linkedin-icon");
+linkedin_img.src = linkedin_icon;
+
+const gmail_img = document.getElementById("gmail-icon");
+gmail_img.src = gmail_icon;
