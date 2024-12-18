@@ -67,3 +67,6 @@ const project3_img = document.getElementById("project-image3");
 project1_img.src = project1;
 project2_img.src = project2;    
 project3_img.src = project3;
+
+const experience1_img = document.getElementById("experience-image1");
+experience1_img.src = project1;
