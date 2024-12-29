@@ -20,7 +20,8 @@ module.exports = {
         path : path.resolve( __dirname, "dist" ),
         filename: "[name][contenthash].js",
         clean: true,
-        assetModuleFilename: "[name][ext]"
+        assetModuleFilename: "[name][ext]", 
+        publicPath: "/PortfolioV2/"
 
 
 
@@ -85,6 +86,15 @@ module.exports = {
                 filename: "index.html",
                 template: path.resolve( __dirname, "src/template.html" )
                
+            }
+        ),
+        new HtmlWebpackPlugin
+        (
+            {
+            title: "404 - Not Found",
+            filename: "404.html",
+            template: path.resolve(__dirname, "src/template.html"),
+        
             }
         )
     ]
