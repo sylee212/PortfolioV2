@@ -1,5 +1,7 @@
+# name of the workflow
 name: Deploy to GitHub Pages
 
+# runs the workflow when changes are made 
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -19,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout the repository into the ubuntu virtual machine on GITHUB
       - name: Checkout repository
         uses: actions/checkout@v4
 
