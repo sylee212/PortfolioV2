@@ -1,7 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-
+// helps to change the public path dynamically
+const code_mode = "development";
 
 
 
@@ -9,7 +10,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
 module.exports = {
-    mode : "development",
+    mode : code_mode,
 
 
 
@@ -21,7 +22,11 @@ module.exports = {
         filename: "[name][contenthash].js",
         clean: true,
         assetModuleFilename: "[name][ext]", 
-        publicPath: "/"
+
+        // tells the server where to serve the bundled files
+        // in development mode, the dev server takes files from memory, so need to point to root
+        // in production mode, such as GitHub Pages, need to point towards the repository name
+        publicPath: code_mode == "development" ? "/" : "/PortfolioV2/"
 
 
 
