@@ -21,7 +21,7 @@ module.exports = {
         filename: "[name][contenthash].js",
         clean: true,
         assetModuleFilename: "[name][ext]", 
-        publicPath: "/PortfolioV2/"
+        publicPath: "/"
 
 
 
