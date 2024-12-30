@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // helps to change the public path dynamically
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV == "production";
 const publicPath = isProduction ? "/PortfolioV2/" : "/";
 
 
