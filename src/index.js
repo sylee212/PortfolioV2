@@ -88,3 +88,9 @@ linkedin_img.src = linkedin_icon;
 
 const gmail_img = document.getElementById("gmail-icon");
 gmail_img.src = gmail_icon;
+
+
+// contact me page //
+import resume from "./assets/files/Resume.pdf";
+const resumeLink = document.getElementById("resume-link");
+resumeLink.href = resume;
