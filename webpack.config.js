@@ -2,8 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // helps to change the public path dynamically
-const code_mode = "development";
-
+const isProduction = process.env.NODE_ENV === "production";
+const publicPath = isProduction ? "/PortfolioV2/" : "/";
 
 
 
@@ -26,7 +26,7 @@ module.exports = {
         // tells the server where to serve the bundled files
         // in development mode, the dev server takes files from memory, so need to point to root
         // in production mode, such as GitHub Pages, need to point towards the repository name
-        publicPath: code_mode == "development" ? "/" : "/PortfolioV2/"
+        publicPath: publicPath
 
 
 
