@@ -10,11 +10,6 @@ const publicPath = isProduction ? "/PortfolioV2/" : "/";
 
 
 module.exports = {
-    mode : code_mode,
-
-
-
-
     entry : { bundle: path.resolve( __dirname, "src/index.js" ) },
     output :
     {
