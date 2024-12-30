@@ -92,5 +92,21 @@ gmail_img.src = gmail_icon;
 
 // contact me page //
 import resume from "./assets/files/Resume.pdf";
+
+const githubLink = document.getElementById("github-link");
+githubLink.href = "https://github.com/sylee212";
+
+const linkedinLink = document.getElementById("linkedin-link");
+linkedinLink.href = "https://www.linkedin.com/in/yuan-lee-81ba222b6/";
+
+const gmailLink = document.getElementById("gmail-link");
+// opens gmail and goes to mail page
+// https://mail.google.com/mail/?view=cm
+// reciepient 
+// to=
+// subject
+// su=
+gmailLink.href = "https://mail.google.com/mail/?view=cm&to=singyuan212@gmail.com&su=Regarding%20your%20resume";
+
 const resumeLink = document.getElementById("resume-link");
 resumeLink.href = resume;
