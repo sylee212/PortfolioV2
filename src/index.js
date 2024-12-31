@@ -115,3 +115,5 @@ resumeLink.href = resume;
 
 const text = `##### App is running in ${process.env.NODE_ENV || "development"} mode.`;
 document.getElementById("test").innerHTML = text;
+
+console.log("new data")
