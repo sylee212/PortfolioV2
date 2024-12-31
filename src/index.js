@@ -110,3 +110,8 @@ gmailLink.href = "https://mail.google.com/mail/?view=cm&to=singyuan212@gmail.com
 
 const resumeLink = document.getElementById("resume-link");
 resumeLink.href = resume;
+
+// to check if the app is runing in what mode
+
+const text = `##### App is running in ${process.env.NODE_ENV || "development"} mode.`;
+document.getElementById("test").innerHTML = text;
