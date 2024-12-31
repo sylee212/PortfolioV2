@@ -6,7 +6,6 @@
     "build": "webpack",
     "build-prod": "set NODE_ENV=production && webpack --mode production",
     "dev": "set NODE_ENV=development && webpack serve --mode development",
-    "prod": "set NODE_ENV=production && webpack serve --mode production",
     "build-css": "tailwindcss build src/styles/styles.css -o dist/tailwind.css"
   },
 
