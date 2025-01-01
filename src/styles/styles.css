@@ -7,7 +7,7 @@
     --orange-text: #F68C68;
     --blue-background-100: #101935;
     --blue-background-200: #28335E;
-    --blue-background-300: #101935;
+    --blue-background-300: #3653a8;
 }
 
 p {
@@ -257,6 +257,27 @@ header {
     }
 }
 
+.about-contact-button {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 2px 10px;
+    background-color: var(--orange-text);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    color: inherit; /* Ensure color transition works */
+
+    &:hover{
+        background-color: var(--blue-background-300);
+    }
+}
+
+
+
+
+
+
 .card {
     /*
     background-color:,  makes the card
@@ -264,7 +285,7 @@ header {
     outline: 2px solid var(--orange-text);,     thickness of outline, type of line, color
     */
     display: flex;
-    background-color: var(--blue-background-300);
+    background-color: var(--blue-background-100);
     z-index: 2;
     
     
