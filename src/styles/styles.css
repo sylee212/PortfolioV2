@@ -47,6 +47,13 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--blue-background-100);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* the z index is the reason why the nav bar dissapears sometimes*/
+    z-index: 3;
 }
 
 .nav-bar {
